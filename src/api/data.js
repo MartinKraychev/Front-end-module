@@ -16,11 +16,11 @@ export async function create(data) {
 }
 
 export async function editById(id, data) {
-    return api.put('/data/games/' + id, data)
+    return api.put(`/games/${id}/`, data)
 }
 
 export async function deleteById(id) {
-    return api.del('/data/games/' + id)
+    return api.del(`/games/${id}/`)
 }
 
 export async function getAllGames() {
